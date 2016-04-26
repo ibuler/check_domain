@@ -14,8 +14,8 @@ api = "http://panda.www.net.cn/cgi-bin/check.cgi?area_domain=%s"  # api地址
 string = "abcdefghigklmnopqrstuvwxyz"                                            # 所有字母
 string_len = len(string)                                          # 长度
 fname = 'name.txt'                                                # 还没被注册的域名写入该文件
-suffix = '.cn'                                                   # 域名后缀
-domain_lenth_range = range(4, 5)                                  # 字母组合的长度，3到5但不包括5
+suffix = '.com'                                                   # 域名后缀
+domain_lenth_range = range(5, 6)                                  # 字母组合的长度，3到5但不包括5
 last_pickle_f = 'last.pkl'
 
 
@@ -97,8 +97,8 @@ def run(domain_lenth):
             f.write('%s\n' % domain)
             f.flush()
         time.sleep(0.5)
-    
- 
+
+
 if __name__ == '__main__':
     """最终执行， 循环执行每种长度组合"""
     for i in domain_lenth_range:
