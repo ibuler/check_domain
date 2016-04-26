@@ -32,5 +32,6 @@ if __name__ == '__main__':
         get_last()
     else:
         last_list = args.split(',')
+        last_list = [int(i) for i in last_list]
         set_last(last_list)
         get_last()
